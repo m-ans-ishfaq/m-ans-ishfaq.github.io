@@ -25,8 +25,8 @@ const projects: IProject[] = [
         video: 'so.mp4',
         title: 'Shadow Odyssey',
         description: 'C# Winform/SFML based platformer game without any game engine',
-        github: 'https://github.com/m-ans-ishfaq/temple-of-death-game',
-        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_excited-to-share-my-project-temple-of-activity-7149399926278438912-3i7W'
+        github: 'https://github.com/m-ans-ishfaq/shadow-odyssey-game',
+        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_excited-to-share-my-project-shadow-odyssey-activity-7197585912627621888-jvIC'
     },
     {
         video: 'grounup.mp4',
@@ -36,21 +36,22 @@ const projects: IProject[] = [
     {
         video: 'styrate.mp4',
         title: 'Styrate',
-        description: 'Video App made in React Native (Expo) / Firebase Backend'
+        description: 'Video App made in React Native (Expo) / Firebase Backend',
+        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_built-a-react-native-expo-app-to-dip-my-activity-7133795860508721152-_TFG'
     },
     {
         video: 'skillflare.mp4',
         title: 'Skillflare',
         description: 'C++ Console based freelancing app with graphs and tables',
-        github: 'https://github.com/m-ans-ishfaq/temple-of-death-game',
-        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_excited-to-share-my-project-temple-of-activity-7149399926278438912-3i7W'
+        github: 'https://github.com/m-ans-ishfaq/skillflare-app',
+        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_excited-to-share-my-project-skillflare-activity-7149394197840670720-IVkJ'
     },
     {
         video: 'memory-riddle.mp4',
         title: 'Memory Riddle',
         description: 'C++ Console based memory cards game with keyboard controls',
-        github: 'https://github.com/m-ans-ishfaq/temple-of-death-game',
-        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_excited-to-share-my-project-temple-of-activity-7149399926278438912-3i7W'
+        github: 'https://github.com/m-ans-ishfaq/memory-riddle',
+        linkedin: 'https://www.linkedin.com/posts/muhammad-anas-650070281_just-completed-a-straightforward-cli-memory-activity-7148073978241232897-ZMwl'
     },
     {
         video: 'itcrafts.mp4',
@@ -61,7 +62,7 @@ const projects: IProject[] = [
         video: 'ced.mp4',
         title: 'CryptoExpoDisk Landing Page',
         description: 'Designed in Figma, Made in NextJS and TailwindCSS',
-        github: 'https://github.com/m-ans-ishfaq/temple-of-death-game'
+        github: 'https://github.com/m-ans-ishfaq/cryptoexpodisk'
     },
 ]
 
@@ -100,7 +101,7 @@ const ProjectCard = ({ video, title, description, github, linkedin }: IProject) 
                 loop
                 playsInline
             />
-            <div className="absolute top-2 right-4 flex gap-3 text-2xl">
+            <div className="absolute bg-black bg-opacity-50 top-0 right-0 p-4 rounded-bl-lg flex gap-3 text-2xl">
                 {github && (
                     <Link href={github} className="hover:text-secondary">
                         <BsGithub />

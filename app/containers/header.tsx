@@ -30,12 +30,12 @@ const socialLinks = [
     {
         Icon: BsGithub,
         label: 'Github',
-        slug: '#'
+        slug: 'https://github.com/m-ans-ishfaq/'
     },
     {
         Icon: BsLinkedin,
         label: 'Linkedin',
-        slug: '#'
+        slug: 'https://www.linkedin.com/in/muhammad-anas-650070281/'
     },
     {
         Icon: BsTwitterX,

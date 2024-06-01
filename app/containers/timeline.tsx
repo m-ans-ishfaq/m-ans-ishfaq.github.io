@@ -22,11 +22,6 @@ const educationTimeline = [
 
 const experienceTimeLine = [
     {
-        duration : '2024 - Current',
-        title: 'Development Lead',
-        desc: 'Freelancing Agency International'
-    },
-    {
         duration : '2023 - Current',
         title: 'Full Stack Development',
         desc: 'Freelancing Agency International'

@@ -32,14 +32,19 @@ export function Hero()
                     Proficient in JavaScript, React, Next.- js, NestJS, Express, TypeScript, C/C++, C#, and Python. Adaptable to new technologies, I excel in dynamic environments, crafting innovative solutions for evolving digital needs.
                 </p>
                 <div>
-                    <button onClick={() => {
-                        const link = document.createElement('a');
-                        link.href = `/resume.pdf`;
-                        link.download = 'resume.pdf';
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                    }} className="text-xs md:text-base border-2 border-secondary p-4 text-secondary font-bold hover:bg-secondary hover:text-primary-dark">Check Out My Resume</button>
+                    <button
+                        onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = `/resume.pdf`;
+                            link.download = 'resume.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }}
+                        className="overflow-hidden relative text-xs md:text-base border-2 border-secondary p-4 text-secondary font-bold  transition-all duration-300 hover:text-primary-dark group">
+                        <span>Check Out My Resume</span>
+                        <div className='absolute -z-10 top-0 -left-full transition-all duration-300 group-hover:left-0 w-full h-full bg-secondary' />
+                    </button>
                 </div>
             </div>
         </section>
