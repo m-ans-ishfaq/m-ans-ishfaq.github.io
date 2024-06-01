@@ -49,7 +49,7 @@ const TimeLineElement = ({ duration, title, desc, showLine }: { duration: string
 
     useEffect(() => {
         setHeight((ref.current as HTMLLIElement).clientHeight);
-    });
+    }, []);
 
     return (
         <li ref={ref} className="relative left-20">
@@ -76,7 +76,7 @@ const TimelineComponent = ({ title, data }: { title: string, data: { duration: s
             </div>
             <ul className="flex flex-col gap-12 relative">
                 {data.map(({duration, title, desc}, i) => (
-                    <TimeLineElement {...{ key: i, duration, title, desc, showLine: data.length != i + 1}} />
+                    <TimeLineElement key={i} {...{ duration, title, desc, showLine: data.length != i + 1}} />
                 ))}
             </ul>
         </div>

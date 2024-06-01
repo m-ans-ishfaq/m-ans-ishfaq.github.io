@@ -243,7 +243,7 @@ export function Technologies()
                 </Title>
                 <div className="text-xs grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-11 gap-2">
                     {technologies.map(({img, label}, i) => (
-                        <TechnologyComponent {...{img, label, key: i}} />
+                        <TechnologyComponent key={i} {...{img, label}} />
                     ))}
                 </div>
             </div>
