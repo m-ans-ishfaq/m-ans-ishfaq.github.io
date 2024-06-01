@@ -47,7 +47,7 @@ const TimeLineElement = ({ duration, title, desc, showLine }: { duration: string
     }, []);
 
     return (
-        <li ref={ref} className="relative left-20">
+        <li ref={ref} className="relative left-20 w-[calc(100%-5rem)]">
             <div className="flex flex-col">
                 <h4 className="text-lg text-primary-lighter font-bold">{duration}</h4>
                 <p className="font-bold text-lg">{title}</p>
