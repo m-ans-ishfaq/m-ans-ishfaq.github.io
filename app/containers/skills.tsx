@@ -47,7 +47,7 @@ const SkillCard = ({ title, desc }: { title: string, desc: string }) => {
             <div className="group-hover:left-0 transition-all duration-300 absolute top-0 -left-full bg-secondary -z-10 w-full h-full"></div>
         </article>
     )
-}
+};
 
 export function Skills()
 {
